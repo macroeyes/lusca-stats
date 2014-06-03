@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitStats - lusca</title>
+    <meta charset='utf-8'>
+    <link href='../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <style>
+      body { padding-top: 60px; }
+    </style>
+    <link href='../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+    <script src='../assets/jquery.min.js' type='text/javascript'></script>
+    <script src='../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='../assets/highstock.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <a class='brand' href='../index.html'>GitStats - lusca</a>
+          <div class='nav-collapse collapse'>
+            <ul class='nav'>
+              <li class=''>
+                <a href='../general.html'>General</a>
+              </li>
+              <li class=''>
+                <a href='../activity/by_date.html'>Activity</a>
+              </li>
+              <li class=''>
+                <a href='../authors/best_authors.html'>Authors</a>
+              </li>
+              <li class='active'>
+                <a href='by_date.html'>Files</a>
+              </li>
+              <li class=''>
+                <a href='../lines/by_date.html'>Lines</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='tabbable tabs-left'>
+        <ul class='nav nav-tabs'>
+          <li class='active'>
+            <a href='by_date.html'>Files by date</a>
+          </li>
+          <li class=''>
+            <a href='by_extension.html'>Files by extension</a>
+          </li>
+        </ul>
+        <div class='tab-content'>
+          <div class='tab-pane active'>
+            <div class='page-header'>
+              <h1 class='pagination-centered'>Files by date</h1>
+            </div>
+                    <script type="text/javascript">
+                    (function() {
+                      var onload = window.onload;
+                      window.onload = function(){
+                        if (typeof onload == "function") onload();
+                                var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Files" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "files_by_date" },"subtitle": {  },"series": [{ "name": "Files by date","type": "spline","data": [ [ 1394236800000,41 ],[ 1394323200000,180 ],[ 1394409600000,184 ],[ 1394496000000,184 ],[ 1394582400000,184 ],[ 1394668800000,215 ],[ 1394755200000,111 ],[ 1394841600000,218 ],[ 1394928000000,218 ],[ 1395014400000,218 ],[ 1395100800000,218 ],[ 1395187200000,120 ],[ 1395273600000,126 ],[ 1395360000000,131 ],[ 1395446400000,131 ],[ 1395532800000,131 ],[ 1395619200000,132 ],[ 1395705600000,137 ],[ 1395792000000,141 ],[ 1395878400000,141 ],[ 1395964800000,144 ],[ 1396051200000,144 ],[ 1396137600000,144 ],[ 1396224000000,144 ],[ 1396310400000,144 ],[ 1396396800000,144 ],[ 1396483200000,152 ],[ 1396569600000,152 ],[ 1396656000000,152 ],[ 1396742400000,160 ],[ 1396828800000,184 ],[ 1396915200000,195 ],[ 1397001600000,195 ],[ 1397088000000,195 ],[ 1397174400000,195 ],[ 1397260800000,195 ],[ 1397347200000,195 ],[ 1397433600000,195 ],[ 1397520000000,194 ],[ 1397606400000,193 ],[ 1397692800000,196 ],[ 1397779200000,198 ],[ 1397865600000,198 ],[ 1397952000000,198 ],[ 1398038400000,198 ],[ 1398124800000,198 ],[ 1398211200000,201 ],[ 1398297600000,210 ],[ 1398384000000,219 ],[ 1398470400000,220 ],[ 1398556800000,220 ],[ 1398643200000,220 ],[ 1398729600000,220 ],[ 1398816000000,220 ],[ 1398902400000,220 ],[ 1398988800000,220 ],[ 1399075200000,220 ],[ 1399161600000,260 ],[ 1399248000000,260 ],[ 1399334400000,270 ],[ 1399420800000,269 ],[ 1399507200000,265 ],[ 1399593600000,265 ],[ 1399680000000,265 ],[ 1399766400000,265 ],[ 1399852800000,269 ],[ 1399939200000,270 ],[ 1400025600000,271 ],[ 1400112000000,274 ],[ 1400198400000,279 ],[ 1400284800000,279 ],[ 1400371200000,279 ],[ 1400457600000,280 ],[ 1400544000000,324 ],[ 1400630400000,324 ],[ 1400716800000,326 ],[ 1400803200000,431 ],[ 1400889600000,431 ],[ 1400976000000,431 ],[ 1401062400000,431 ],[ 1401148800000,430 ],[ 1401235200000,430 ],[ 1401321600000,430 ],[ 1401408000000,441 ],[ 1401494400000,441 ],[ 1401580800000,441 ],[ 1401667200000,441 ],[ 1401753600000,441 ] ] }] };
+                    
+                    window.chart_files_by_date = new Highcharts.StockChart(options);
+            
+                      };
+                    })()
+                    </script>
+            <div id="files_by_date"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
